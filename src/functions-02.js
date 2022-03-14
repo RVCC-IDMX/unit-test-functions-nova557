@@ -86,7 +86,7 @@ const store = {
    * @return {array} items - the array of items that are filtered
    */
   getExpensiveItems(minPrice) {
-    const items = inventory.filter((item) => item.price > minPrice);
+    const items = inventory.filter((item) => item.price >= minPrice);
     return items;
   },
 
